@@ -17,3 +17,7 @@ We evaluated the PcaNet model on **Labeled Faces in the Wild** (LFW) dataset usi
 * For a 2 layers PcaNet model we have the following number of features:
 
 N_Features = N_filters_layer_1 * N_Blocks * 2^N_filters_layer_2
+
+
+## Our results
+
