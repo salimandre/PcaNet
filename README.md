@@ -14,6 +14,5 @@ We evaluated the PcaNet model on **Labeled Faces in the Wild** (LFW) dataset usi
 
 * Finally hashed outputs are encoded by **blocks of histograms**
 
-For a 2 layers PcaNet model we have the following number of features:
-
+* For a 2 layers PcaNet model we have the following number of features:
 N_Features = N_filters_layer_1 * N_Blocks * 2^N_filters_layer_2
