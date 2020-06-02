@@ -8,7 +8,7 @@ We evaluated the PcaNet model on **Labeled Faces in the Wild** (LFW) dataset usi
 
 ## Summary of the method
 
-* PcaNet is a model which computes a **cascade of convolutions**. At each level of the network **filters** are learnt using PCA. It is achieved by first **sampling patches** from dataset. Then PCA learns an **orthogonal basis of patches** which allows to decompose any patches in this new basis so that it looses the less information. 
+* PcaNet is a model which computes a **cascade of convolutions**. At each level of the network **filters** are learnt using PCA. It is achieved by first **sampling patches** from dataset. Then PCA learns an **orthogonal basis of patches** which allows to decompose any patch in this new basis so that it minimizes the loss of information. 
 
 <p align="center">
   <img src="img/filters_l1.png" width="25%">
@@ -56,11 +56,11 @@ N_Features = N_filters_layer_1 * N_Blocks * 2^N_filters_layer_2
 
 ## Our results
 
-We used a 2 layers PcaNet with respectively 10 and 4 filters per layers. filters are of shape (4,4). We encode outputs into 12 blocks for which we computed histograms. We use a sparsity parameter of 0.5. We got 1920 features and trained an SVM with these features. We could achieve 97% accuracy on LFW dataset, while baseline with raw images as features obtained 85%.
+We used a 2 layers PcaNet with respectively 10 and 4 filters per layers. filters are of shape (4,4). We encode outputs into 12 blocks for which we computed histograms. We use a sparsity parameter of 0.5. We got 1920 features and trained an SVM with these features. We could achieve 97% accuracy on LFW dataset, while baseline with raw images as features (1850 dims) obtained 85%.
 
 <p align="center">
   <img src="img/performance.png" width="35%">
 </p>
 
-We could also apply to these features a last dimensionality reduction step (PCA) to obtain less features. With 150 features we were able to achieve 89% accuracy which proved to be above the result obtained with eigen faces technique that is 85%.
+We could also apply to these features a last dimensionality reduction step (PCA) to obtain less features. With 150 features we were able to achieve 89% accuracy which proved to be above the result obtained with eigenfaces technique that is 86%.
 
