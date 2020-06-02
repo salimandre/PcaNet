@@ -34,7 +34,11 @@ We evaluated the PcaNet model on **Labeled Faces in the Wild** (LFW) dataset usi
   <img src="img/hashed_3_small.png" width="35%">
 </p>
 
-* Finally hashed outputs are encoded by **blocks of histograms**
+* Finally hashed outputs are encoded by **blocks of histograms** and we obtain our feature map.
+
+<p align="center">
+  <img src="img/feature_map_fifty.png" width="35%">
+</p>
 
 * For a 2 layers PcaNet model we have the following number of features:
 
