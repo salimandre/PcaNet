@@ -68,5 +68,5 @@ We could achieve **97% accuracy** on LFW dataset, while baseline with raw images
   <img src="img/performance.png" width="35%">
 </p>
 
-We could also apply to these features a last dimensionality reduction step (PCA) to obtain less features. With 150 features we were able to achieve 89% accuracy which proved to be above the result obtained with eigenfaces technique that is 86%.
+We could also apply to these features a last dimensionality reduction step (PCA) to obtain less features. With 150 features we were able to achieve 89% accuracy which proved to be above the result obtained with 150 eigenfaces technique that is 86%.
 
