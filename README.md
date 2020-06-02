@@ -11,7 +11,7 @@ We evaluated the PcaNet model on **Labeled Faces in the Wild** (LFW) dataset usi
 * PcaNet is a model which computes a **cascade of convolutions**. At each level of the network **filters** are learnt using PCA. It is achieved by first **sampling patches** from dataset. Then PCA learns an **orthogonal basis of patches** which allows to decompose any patches in this new basis so that it looses the less information. 
 
 <p align="center">
-  <img src="img/filters_l1.png" width="35%">
+  <img src="img/filters_l1.png" width="25%">
 </p>
 
 * Once filters are learnt inference is done by applying a sequence of 2D convolutions.
