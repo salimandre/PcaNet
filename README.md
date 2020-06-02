@@ -20,7 +20,7 @@ We evaluated the PcaNet model on **Labeled Faces in the Wild** (LFW) dataset usi
   <img src="img/output_l2_2.png" width="35%">
 </p>
 
-* A **binary hashing step** binarize outputs. For each pixel it provides a binary sequence, hence an integer.
+* A **binary hashing step** binarize outputs. For each pixel it provides a binary sequence, hence an integer. At this step we added a sparsity parameter not introduced by authors. 
 
 <p align="center">
   <img src="img/hashed_1_small.png" width="35%">
@@ -56,8 +56,9 @@ N_Features = N_filters_layer_1 * N_Blocks * 2^N_filters_layer_2
 
 ## Our results
 
-We could achieve 97% accuracy on LFW dataset. LFA dataset
+We could achieve 97% accuracy on LFW dataset. We used a 2 layers 
 
-
-
+<p align="center">
+  <img src="img/performance.png" width="35%">
+</p>
 
