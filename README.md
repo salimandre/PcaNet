@@ -59,7 +59,7 @@ N_Features = N_filters_layer_1 * N_Blocks * 2^N_filters_layer_2
 We used a 2 layers PcaNet with respectively 10 and 4 filters per layers. filters are of shape (4,4). We encode outputs into 12 blocks for which we computed histograms. We use a sparsity parameter of 0.5. We got 1920 features and trained an SVM with these features. 
 
 <p align="center">
-  <img src="img/summary.png" width="35%">
+  <img src="img/summary.png" width="45%">
 </p>
 
 We could achieve **97% accuracy** on LFW dataset, while baseline with raw images as features (1850 dims) obtained 85%.
