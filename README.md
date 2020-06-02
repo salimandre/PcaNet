@@ -17,12 +17,28 @@ We evaluated the PcaNet model on **Labeled Faces in the Wild** (LFW) dataset usi
 * Once filters are learnt inference is done by applying a sequence of 2D convolutions.
 
 <p align="center">
-  <img src="img/data.png" width="35%">
+  <img src="img/output_l2_2.png" width="35%">
 </p>
 
 * A **binary hashing step** binarize outputs. For each pixel it provides a binary sequence, hence an integer.
 
-* Finally hashed outputs are encoded by **blocks of histograms**
+<p align="center">
+  <img src="img/hashed_1_small.png" width="35%">
+</p>
+
+<p align="center">
+  <img src="img/hashed_2_small.png" width="35%">
+</p>
+
+<p align="center">
+  <img src="img/hashed_3_small.png" width="35%">
+</p>
+
+* Finally hashed outputs are encoded by **blocks of histograms** and we obtain our feature map.
+
+<p align="center">
+  <img src="img/feature_map_fifty.png" width="35%">
+</p>
 
 * For a 2 layers PcaNet model we have the following number of features:
 
