@@ -24,10 +24,13 @@ N_Features = N_filters_layer_1 * N_Blocks * 2^N_filters_layer_2
 * We used LFW dataset: **1288 images of faces from 7 political leaders** (Ariel Sharon, Colin Powell, Donald Rumsfeld, George W Bush, Gerhard Schroeder, Hugo Chavez, Tony Blair). Dataset contains at least 70 images of each politician of size (50, 37).
 * We made a **75/25 split** of the dataset in order to get train and test sets
 
+<p align="center">
+  <img src="img/data.png" width="35%">
+</p>
+
 ## Our results
 
 We could achieve 97% accuracy on LFW dataset. LFA dataset
-
 
 
 
